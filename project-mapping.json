@@ -1,0 +1,102 @@
+{
+  "name": "Hunyuan Video Prompt System",
+  "version": "1.0.0",
+  "description": "A framework for generating structured video prompts for the Hunyuan Video AI model",
+  "components": {
+    "documentation": {
+      "overview": {
+        "path": "hyvid/README.md",
+        "description": "System overview, features, and usage guidelines"
+      },
+      "guidelines": {
+        "path": "hyvid/video-prompt-guidance.md",
+        "description": "Detailed technical specifications for prompt construction"
+      }
+    },
+    "prompting": {
+      "examples": {
+        "path": "hyvid/hunyuan-video-prompt-examples.txt",
+        "description": "Collection of properly formatted example prompts"
+      },
+      "instruction": {
+        "path": "hyvid/hunyuan-video-prompt.txt",
+        "description": "Basic instructions for the prompt rewriting agent"
+      }
+    },
+    "frameworks": {
+      "contextAwarePrompting": {
+        "path": "prompt-spitoon.md",
+        "description": "Context-Aware Prompt Engineering Framework for enhancing prompt sophistication and implicit guidance"
+      }
+    }
+  },
+  "promptStructure": {
+    "shotType": {
+      "required": true,
+      "description": "Camera position/angle and movement specifications",
+      "examples": ["Wide shot", "Close-up", "Medium shot", "Low-angle tracking shot"]
+    },
+    "coreElements": {
+      "required": true,
+      "components": {
+        "subject": {
+          "required": true,
+          "description": "Primary subject description"
+        },
+        "environment": {
+          "required": true,
+          "description": "Environmental context"
+        },
+        "lighting": {
+          "required": true,
+          "description": "Lighting conditions"
+        },
+        "style": {
+          "required": true,
+          "description": "Visual style/mood details"
+        }
+      }
+    },
+    "technicalParameters": {
+      "required": false,
+      "components": {
+        "movement": {
+          "required": false,
+          "description": "Movement direction and speed"
+        },
+        "composition": {
+          "required": false,
+          "description": "Composition guidelines (rule of thirds, leading lines, etc.)"
+        },
+        "lens": {
+          "required": false,
+          "description": "Lens type or focal length implications"
+        },
+        "duration": {
+          "required": false,
+          "description": "Shot duration or timing suggestions"
+        }
+      }
+    }
+  },
+  "lengthGuidelines": {
+    "singleObject": "1-2 sentences",
+    "standardShots": "2-3 sentences",
+    "complexSequences": "Up to 4 sentences"
+  },
+  "qualityChecklist": [
+    "Clear subject focus and action",
+    "Specific lighting description",
+    "Concrete visual references",
+    "Actionable camera direction",
+    "Appropriate technical specifications"
+  ],
+  "commonIssues": [
+    "Mixing technical terms inconsistently",
+    "Including non-visual elements",
+    "Omitting crucial lighting or environmental context",
+    "Over-describing beyond visual elements",
+    "Using vague or abstract descriptors"
+  ],
+  "promptFormat": "[Shot Type]: [Primary Subject Action/Description]. [Environment and Lighting Details]. [Style and Technical Specifications]."
+}
