@@ -1,0 +1,9 @@
+we can use the project mapping @/project-mapping.json  to write a sequence of video prompts in reverse, by guessing what happened in the scene, we will adhere to instruction in the @/project-mapping.json  when speculating, writing a single video prompt at a time.
+We will define the process methodology for this task in planning mode.
+
+1. read the @/STORY/prompt10.txt and understand the context of the scene
+2. understand the instructions in @/project-mapping.json 
+3. write "prompt09.txt" which aims to explain how we reached @/STORY/prompt10.txt   
+4. repeat the instruction for each page until you reach the "prompt0.txt" which will be the start of this sequence of prompts.
+5. as you step through the prompts, with contextual awareness introduce elements to the story as you write each prompt.
+6. each prompt should be a single paragraph
